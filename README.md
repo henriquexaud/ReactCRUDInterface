@@ -1,50 +1,36 @@
-# React + TypeScript + Vite
+# Aplicação de Gerenciamento de Usuários
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esta é uma aplicação web desenvolvida com React e TypeScript para gerenciar usuários. Ela permite criar, visualizar e deletar registros, com um design responsivo e amigável.
 
-Currently, two official plugins are available:
+## 📋 Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Listar usuários cadastrados
+- Adicionar novos usuários
+- Remover usuários
+- Interface estilizada com responsividade
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🛠️ Tecnologias Utilizadas
 
-- Configure the top-level `parserOptions` property like this:
+- **React** com **TypeScript**
+- **CSS puro** para estilização
+- **HTML5**
+- **Vite** (provavelmente, para bundling)
+- **Fastify** (backend, se integrado com a API enviada anteriormente)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 🚀 Como Usar
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### 1. Pré-requisitos
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+- Node.js instalado (versão 14+)
+- Gerenciador de pacotes (npm ou yarn)
+
+### 2. Clonar o repositório
+
+```bash
+git clone <url-do-repositorio>
+cd <nome-do-repositorio>
 ```
